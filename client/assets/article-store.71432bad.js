@@ -1,0 +1,1 @@
+import{S as a,a as l}from"./base-store.242fa715.js";class o extends a{constructor(){super()}async getArticles(t,r,s,i){t==null&&(t=1);let e="?page="+t;return r!=null&&(e+="&cityId="+r),s!=null&&(e+="&dishId="+s),i!=null&&(e+="&cuisineId="+i),await this.get(l.routes.article.get+e)}async getArticle(t){return await this.get(l.routes.article.get+t)}}export{o as A};
